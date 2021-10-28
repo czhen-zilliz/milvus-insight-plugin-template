@@ -1,0 +1,12 @@
+{
+  "name": "example-plugin",
+  "devDependencies": {
+    "@nestjs/cli": "^8.1.4",
+    "@types/express": "^4.17.11",
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.23.0",
+    "express": "^4.17.1"
+  }
+}
