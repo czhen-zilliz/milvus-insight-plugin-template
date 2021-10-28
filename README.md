@@ -1,0 +1,1 @@
+# milvus-insight-plugin-template
