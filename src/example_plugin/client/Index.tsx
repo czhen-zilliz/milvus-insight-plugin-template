@@ -7,7 +7,7 @@ const CustomComponent = () => {
 
   async function onBtnClick ()  {
     const result = await axios(
-      'http://localhost:3000/api/v1/example',
+      'http://localhost:3000/api/plugins/example',
     );
     console.log(result);
     alert(result?.data?.data);

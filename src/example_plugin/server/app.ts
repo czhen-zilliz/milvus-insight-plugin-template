@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response, NextFunction } from "express";
 
 const router = express.Router();
 
@@ -14,7 +14,7 @@ const data = [
   },
 ];
 
-router.get("/", (req, res, next) => {
+router.get("/", (req: Request, res: Response, next: NextFunction) => {
   return res.json({ message: "Example Index", data });
 });
 

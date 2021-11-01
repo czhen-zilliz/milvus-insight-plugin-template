@@ -5,8 +5,5 @@
     "path": "plugin-1",
     "entry": "Index.tsx",
     "label": "plugin-label-1"
-  },
-  "server": {
-    "api": "example"
   }
 }
