@@ -77,7 +77,7 @@ cd ../..
 cd milvus-insight/client
 rm -fr tsconfig.paths.json
 mv tsconfig.paths.plugin.json tsconfig.paths.json
-start:plugin
+yarn start:plugin
 ```
 
 ### Run `milvus-insight` server 
