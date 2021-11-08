@@ -2,6 +2,7 @@
   "name": "milvus-insight-plugin-template",
   "private": true,
   "workspaces": [
-    "src/**"
+    "src/**",
+    "milvus-insight/**"
   ]
 }

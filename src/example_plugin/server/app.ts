@@ -15,7 +15,7 @@ const data = [
 ];
 
 router.get("/", (req: Request, res: Response, next: NextFunction) => {
-  return res.json({ message: "Example Index", data });
+  return res.json(data);
 });
 
 export default { router };

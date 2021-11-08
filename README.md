@@ -55,28 +55,15 @@ You can develop your plugins(both client and server) under `src/<your plugin dir
 
 `git submodule update --remote`
 
-Currently you need to manually change submodule's branch until all prs merged.
-```bash
-cd milvus-insight
-git checkout plugin-enable
-git pull
-cd client
-yarn
-cd ../express
-yarn
-cd ../..
-```
-
-### Init `src/`
+### Install packages
 
 `npx lerna bootstrap`
 
-### Modify(temp) and run `milvus-insight` client 
+### Modify and run `milvus-insight` client 
 
 ```bash
+mv ./tsconfig.paths.plugin.json ./milvus-insight/client/config.paths.json
 cd milvus-insight/client
-rm -fr tsconfig.paths.json
-mv tsconfig.paths.plugin.json tsconfig.paths.json
 yarn start:plugin
 ```
 
@@ -84,8 +71,7 @@ yarn start:plugin
 
 ```bash
 cd milvus-insight/express
-yarn build
-cross-env PLUGIN_DEV=1 node dist/milvus_insight/express/src/app.js
+yarn start:plugin
 ```
 
 ### Start developing
